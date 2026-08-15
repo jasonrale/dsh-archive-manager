@@ -1,0 +1,13 @@
+# This file is loaded automatically when the package is a profile layer
+# (declares dsh.bundle.patch). It inserts the plugin into the web composition.
+- insert:
+    - id: archive-manager
+      name: dsh-archive-manager
+      inject:
+        - webServer
+        - agents
+        - sessionPersistence
+        - workspaceRegistry
+        - storageDomain
+        - shell
+        - sessions
