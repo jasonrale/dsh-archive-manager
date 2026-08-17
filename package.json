@@ -1,7 +1,7 @@
 {
   "name": "dsh-archive-manager",
   "description": "Archived-session manager for DSH Web: sidebar footer entry, grouped archive panel, restore/delete with full agent teardown",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
