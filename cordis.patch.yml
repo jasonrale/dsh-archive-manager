@@ -4,10 +4,9 @@
     - id: archive-manager
       name: dsh-archive-manager
       inject:
-        - webServer
+        - connection
         - agents
         - sessionPersistence
         - workspaceRegistry
         - storageDomain
-        - shell
         - sessions
