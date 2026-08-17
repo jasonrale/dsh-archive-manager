@@ -23,32 +23,16 @@ Developed against `@deepseek-ai/dsh` **0.1.0-rc.6**. Relies on official internal
 
 ## Install
 
-From npm (one command):
+From npm:
 
 ```sh
 npx @deepseek-ai/dsh plugin --profile web add dsh-archive-manager
 ```
 
-Or from a git checkout:
-
-```sh
-# 1. Clone the repo — any location works; this is just an example
-git clone https://github.com/Jasonrale/dsh-archive-manager.git ~/dsh-archive-manager
-
-# 2. Register it (the profile is created automatically if missing;
-#    replace the path with the one YOU cloned to)
-npx @deepseek-ai/dsh plugin --profile web add ~/dsh-archive-manager
-
-# 3. Restart dsh web
-```
-
 ### Updating
 
-A local install is a snapshot, not a live link — after changing the plugin sources, re-register:
-
 ```sh
-npx @deepseek-ai/dsh plugin --profile web remove dsh-archive-manager
-npx @deepseek-ai/dsh plugin --profile web add ~/dsh-archive-manager
+npx @deepseek-ai/dsh plugin --profile web update dsh-archive-manager
 ```
 
 ## Uninstall
@@ -57,7 +41,7 @@ npx @deepseek-ai/dsh plugin --profile web add ~/dsh-archive-manager
 npx @deepseek-ai/dsh plugin --profile web remove dsh-archive-manager
 ```
 
-Then restart dsh web (the source directory can be kept or deleted).
+Then restart dsh web.
 
 ## Known limitations
 

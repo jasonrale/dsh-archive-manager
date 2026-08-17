@@ -23,31 +23,16 @@
 
 ## 安装
 
-从 npm 安装（一条命令）：
+从 npm 安装：
 
 ```sh
 npx @deepseek-ai/dsh plugin --profile web add dsh-archive-manager
 ```
 
-或从 git 克隆安装：
-
-```sh
-# 1. 克隆仓库——放哪都行，这里只是示例位置
-git clone https://github.com/Jasonrale/dsh-archive-manager.git ~/dsh-archive-manager
-
-# 2. 注册（profile 不存在会自动创建；路径换成你实际的克隆位置）
-npx @deepseek-ai/dsh plugin --profile web add ~/dsh-archive-manager
-
-# 3. 重启 dsh web
-```
-
 ### 更新
 
-本地安装是快照不是实时链接——更新插件源码后需重新注册：
-
 ```sh
-npx @deepseek-ai/dsh plugin --profile web remove dsh-archive-manager
-npx @deepseek-ai/dsh plugin --profile web add ~/dsh-archive-manager
+npx @deepseek-ai/dsh plugin --profile web update dsh-archive-manager
 ```
 
 ## 卸载
@@ -56,7 +41,7 @@ npx @deepseek-ai/dsh plugin --profile web add ~/dsh-archive-manager
 npx @deepseek-ai/dsh plugin --profile web remove dsh-archive-manager
 ```
 
-然后重启 dsh web（源码目录可留可删）。
+然后重启 dsh web。
 
 ## 已知限制
 
